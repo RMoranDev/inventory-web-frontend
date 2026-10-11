@@ -102,6 +102,7 @@ body {
 
 .btn-submit:hover {
     background-color: #185847;
+    transform: translateY(-2px);
 }
 
 /* Link de recuperação de senha */
@@ -115,4 +116,36 @@ body {
 
 .forgot-link:hover {
     color: #185847;
+}
+
+/* Botao temporario de visitante */
+
+.visitor-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.btn-visitor {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #22735C; /* Cor roxa/azul moderna */
+    border-radius: 8px;       /* Bordas arredondadas */
+    text-decoration: none;    /* Remove o sublinhado */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-visitor:hover {
+    background-color: #185847; /* Tom mais escuro */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.15);
+}
+
+.btn-visitor:active {
+    transform: translateY(0);
 }

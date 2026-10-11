@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48"><rect width="48" height="48" rx="11" fill="#22735C"/>
+<g stroke="#22735C" stroke-width="1.6" stroke-linejoin="round">
+<path d="M24 9l13 7.5L24 24l-13-7.5z" fill="#FFFFFF"/>
+<path d="M11 16.5L24 24v15L11 31.5z" fill="#FFFFFF" fill-opacity=".6"/>
+<path d="M37 16.5L24 24v15l13-7.5z" fill="#FFFFFF" fill-opacity=".85"/>
+</g><text x="60" y="31" font-family="'IBM Plex Sans',system-ui,'Segoe UI',Arial,sans-serif" font-size="21" font-weight="600" letter-spacing="-0.2" fill="#262626">Inventory Web</text></svg>
