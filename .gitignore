@@ -1,0 +1,17 @@
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Dependências e builds
+node_modules/
+dist/
+
+# Arquivos do sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Arquivo de cores
+colors.txt

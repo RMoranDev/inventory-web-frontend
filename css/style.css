@@ -1,0 +1,118 @@
+/* Configurações globais e de fonte */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica', Arial, sans-serif;
+}
+
+/* Fundo suave off-white / bege da imagem */
+body {
+    background-color: #F2F2F0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #262626;
+    margin: 0;
+}
+
+/* Container central com largura fixa */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título da marca top */
+.brand-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 24px;
+}
+
+/* Cabeçalho "Entrar" */
+.main-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 32px;
+}
+
+/* Agrupamento dos campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Rótulos de entrada */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+/* Estilização das caixas de texto */
+.form-group input {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    color: #262626;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus {
+    border-color: #22735C;
+    box-shadow: 0 0 0 3px rgba(31, 110, 89, 0.15);
+}
+
+/* Botão de Entrar verde escuro / teal */
+.btn-submit {
+    width: 100%;
+    background-color: #22735C;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #185847;
+}
+
+/* Link de recuperação de senha */
+.forgot-link {
+    display: inline-block;
+    color: #22735C;
+    font-size: 15px;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.forgot-link:hover {
+    color: #185847;
+}
