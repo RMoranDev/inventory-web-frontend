@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,29 @@
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <main>
+    <main class="login-page">
 
         <section class="login-container">
-            
+
             <header>
                 <span class="brand-title">Inventory Web</span>
-                <h1 class="main-heading">Entar</h1>
+                <h1 class="main-heading">Entrar</h1>
                 <p class="subtitle">Acesse o controle de estoque</p>
             </header>
 
-            <form action="#" method="post">
+            <form id="login-form">
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input 
-                        type="email" 
-                        id="email"
-                        name="email"
-                        placeholder="seu@email.com"
-                        autocomplete="email"
-                        required
-                        > 
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email"
+                        required>
                 </div>
 
                 <div class="form-group">
                     <label for="senha">Senha</label>
-                    <input 
-                        type="text" 
-                        id=""
-                        name=""
-                        placeholder="Digite sua senha"
-                        autocomplete="current-password"
-                        required 
-                    >
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha"
+                        autocomplete="current-password" required>
                 </div>
 
                 <button type="submit" class="btn-submit">Entrar</button>
@@ -50,10 +40,22 @@
                 </div>
 
                 <div class="visitor-container">
-                    <a href="pages/home.html" class="btn-visitor">Entrar como visitante</a>
+                    <a href="/pages/dashboard.html" class="btn-visitor">Entrar como visitante</a>
                 </div>
             </form>
         </section>
     </main>
+
+    <script>
+        document
+            .getElementById("login-form")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                window.location.href = "pages/dashboard.html";
+            });
+    </script>
+
 </body>
+
 </html>

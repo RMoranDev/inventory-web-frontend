@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Web</title>
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- Container onde a Aside/Sidebar será inserida -->
+        <div id="sidebar-container"></div>
+
+        <!-- Conteúdo Principal à Direita -->
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>Home</h1>
+                    <p>Olá, Admin. Este é o resumo do estoque.</p>
+                </div>
+                <button class="btn-primary">Ver produtos</button>
+            </header>
+
+            <!-- Cards de Resumo -->
+            <section class="stats-grid">
+                <div class="card">
+                    <h2>12</h2>
+                    <p>Produtos</p>
+                </div>
+                <div class="card">
+                    <h2>5</h2>
+                    <p>Categorias</p>
+                </div>
+                <div class="card warning">
+                    <h2>2</h2>
+                    <p>Estoque baixo</p>
+                </div>
+                <div class="card danger">
+                    <h2>1</h2>
+                    <p>Sem estoque</p>
+                </div>
+            </section>
+
+            <!-- Tabelas / Listas -->
+            <section class="section-box">
+                <h3>Precisam de reposição</h3>
+                <div class="list-item alert">
+                    <span>Monitor 24" <small>MON-003</small></span>
+                    <span class="status warning">⚠️ 2 unidades</span>
+                </div>
+                <div class="list-item alert">
+                    <span>Cadeira gamer <small>CAD-004</small></span>
+                    <span class="status danger">❌ Sem estoque</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script para carregar a Aside dinamicamente -->
+    <script>
+        fetch('../components/sidebar.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Erro ao carregar o menu");
+                }
+
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById("sidebar-container").innerHTML = html;
+
+                if (window.lucide) {
+                    window.lucide.createIcons();
+                }
+            })
+            .catch(error => {
+                console.error("Não foi possível carregar a sidebar:", error);
+            });
+    </script>
+
+</body>
+
+</html>
