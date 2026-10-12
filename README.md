@@ -1,2 +1,2 @@
 # inventory-web-frontend
-Front-end web do sistema Inventory Web
+Link GitHub Pages [Inventory Web](https://rmorandev.github.io/inventory-web-frontend/)
